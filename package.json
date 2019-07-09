@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev":"docsify serve docs"
+    "dev":"docsify serve ./docs"
   },
   "author": "YB",
   "license": "ISC"
