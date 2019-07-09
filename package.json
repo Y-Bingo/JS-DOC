@@ -1,0 +1,14 @@
+{
+  "name": "js-doc",
+  "version": "1.0.0",
+  "description": "JS基础总结",
+  "main": " ",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev":"docsify serve docs"
+  },
+  "author": "YB",
+  "license": "ISC"
+}
