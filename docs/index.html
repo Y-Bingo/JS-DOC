@@ -8,8 +8,8 @@
         <meta name="description" content="Description">
         <meta name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+        <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"> -->
     </head>
 
@@ -17,31 +17,30 @@
         <div id="app"> Loading...</div>
         <script>
             window.$docsify = {
-                name: 'js基础总结',
+                name: '前端基础知识总结',
                 // 文档标题跳转地址
-                nameLink: '/',
+                alias: {
+                    '/': '_home.md',
+                    '/.*/_sidebar.md': '_sidebar.md'
+                },
+                // nameLink: '/',
                 // 页面github挂件
                 repo: 'https://github.com/Y-Bingo',
                 // 显示文档更新日期
                 formatUpdated: '{MM}/{DD} {HH}:{mm}',
                 // 开启404 页面
                 notFoundPage: true,
-                alias: {
-                    '/': '/_home.md',
-                    "/.*/_sidebar.md": '/doc/_sidebar.md'
-                },
                 // 文档加载的根路径
-                basePath: '/docs/',
-                basePath: 'https://y-bingo.github.io/JS-DOC/',
+                // basePath: '/docs/',
+                // basePath: 'https://y-bingo.github.io/JS-DOC/',
                 // 入口文件改为 /doc/_home.md
-                homepage: '/',
+                // homepage: '_home.md',
                 // 加载 _sidebar.md
                 loadSidebar: true,
                 // 切换页面默认跳转到页面顶部
                 auto2top: true,
                 maxLevel: 2,
                 subMaxLevel: 3,
-
             }
         </script>
         <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
